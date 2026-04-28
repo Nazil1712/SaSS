@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$bg-color: rgb(58, 66, 218); 
+$text-color: white;
+
+@mixin flexProps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyle($spacing) {
+    color: $text-color;
+    font-size: 10px + 50px;
+    letter-spacing: $spacing;
+    text-transform: capitalize
+}
+
+.main_header {
+    @include flexProps();
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 25px;
+
+    background-color:$bg-color;
+
+    h1{
+        @include textStyle(1.5rem);
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        &::after {
+            content: "Nazil";
+        }
+    }
+
+    p {
+        @include textStyle(0.5rem);
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(0.5);
+        }
+    }
+}

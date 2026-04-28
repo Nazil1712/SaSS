@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  gap: 25px;
+  background-color: rgb(58, 66, 218);
+}
+.main_header h1 {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 1.5rem;
+  text-transform: capitalize;
+}
+.main_header h1:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.main_header h1::after {
+  content: "Nazil";
+}
+.main_header p {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 0.5rem;
+  text-transform: capitalize;
+}
+.main_header p:hover {
+  cursor: pointer;
+  transform: scale(0.5);
+}/*# sourceMappingURL=styles.css.map */
