@@ -1,23 +1,10 @@
+@import "./mixin";
+@import "./var";
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-$bg-color: rgb(58, 66, 218); 
-$text-color: white;
-
-@mixin flexProps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin textStyle($spacing) {
-    color: $text-color;
-    font-size: 10px + 50px;
-    letter-spacing: $spacing;
-    text-transform: capitalize
 }
 
 .main_header {

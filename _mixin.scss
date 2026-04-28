@@ -1,0 +1,12 @@
+@mixin flexProps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textStyle($spacing) {
+    color: $text-color;
+    font-size: 10px + 50px;
+    letter-spacing: $spacing;
+    text-transform: capitalize
+}
